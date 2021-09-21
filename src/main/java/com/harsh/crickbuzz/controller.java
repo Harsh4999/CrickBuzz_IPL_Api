@@ -21,8 +21,8 @@ public class controller {
 	@GetMapping("/score")
 	public ResponseEntity<Object> getScore() {
 		try {
-			Date d = new Date();
-			 Date d1 = new GregorianCalendar(2021, Calendar.SEPTEMBER, 20).getTime();
+			Date d = new Date(); //current
+			 Date d1 = new GregorianCalendar(2021, Calendar.SEPTEMBER, 20).getTime();//32 match
 
 			if(d.after(d1)) {
 				long difference_In_Time
